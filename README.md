@@ -59,6 +59,14 @@ User (Browser)
 - Products
 - TotalAmount
 - UserID
+- ## 🗄️ DynamoDB Sample Data
+
+All DynamoDB table sample data is available in a single file:
+
+- `dynamodb/all_tables_data.json`
+
+This file contains Products, Cart, and Orders table data.
+
 
 ---
 
