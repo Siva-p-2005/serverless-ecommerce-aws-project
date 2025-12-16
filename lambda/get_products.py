@@ -20,3 +20,8 @@ def lambda_handler(event, context):
         },
         "body": json.dumps(response['Items'], default=decimal_default)
     }
+
+
+
+Test Event (paste in Lambda → Test)
+{}
