@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .product h3 {
+            margin: 0 0 5px;
+        }
+        .price {
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        #cart {
+            margin-top: 30px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Products</h2>
+
+<div class="product">
+    <h3>T-Shirt</h3>
+    <p>100% cotton</p>
+    <p class="price">Price: $15</p>
+    <button onclick="addToCart('T-Shirt', 15)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>Shoe</h3>
+    <p>Running shoes</p>
+    <p class="price">Price: $50</p>
+    <button onclick="addToCart('Shoe', 50)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>Jacket</h3>
+    <p>100% cotton</p>
+    <p class="price">Price: $60</p>
+    <button onclick="addToCart('Jacket', 60)">Add to Cart</button>
+</div>
+
+<div id="cart">
+    <h3>Cart</h3>
+    <ul id="cartItems"></ul>
+    <p><b>Total: $<span id="total">0</span></b></p>
+</div>
+
+<script>
+let total = 0;
+
+function addToCart(name, price) {
+    let cartItems = document.getElementById("cartItems");
+    let li = document.createElement("li");
+    li.textContent = name + " - $" + price;
+    cartItems.appendChild(li);
+
+    total += price;
+    document.getElementById("total").innerText = total;
+}
+</script>
+
+</body>
+</html>
