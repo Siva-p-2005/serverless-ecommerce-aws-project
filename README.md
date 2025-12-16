@@ -101,7 +101,20 @@ This file contains Products, Cart, and Orders table data.
   - dynamodb:DeleteItem
   - dynamodb:Query
 
+---## 🌐 API Gateway URLs
+
+**Base URL**
+
+> 🔸 Replace `YOUR_API_ID` with your actual API Gateway ID.
+
 ---
+
+### 🔹 Get All Products
+- **Method:** GET  
+- **Endpoint:**
+- **Full URL Example:**
+https://YOUR_API_ID.execute-api.us-east-1.amazonaws.com/prod/products
+
 
 ## 🚀 Execution Steps
 1. User opens frontend URL hosted in S3
