@@ -1,0 +1,42 @@
+{
+  "ProductsTable": [
+    {
+      "ProductID": "P001",
+      "Name": "T-Shirt",
+      "Description": "100% Cotton T-Shirt",
+      "Price": 499,
+      "ImageURL": "https://example.com/tshirt.jpg"
+    },
+    {
+      "ProductID": "P002",
+      "Name": "Shoes",
+      "Description": "Running Shoes",
+      "Price": 1299,
+      "ImageURL": "https://example.com/shoes.jpg"
+    }
+  ],
+
+  "CartTable": [
+    {
+      "userId": "U001",
+      "productId": "P001",
+      "quantity": 2,
+      "price": 499
+    }
+  ],
+
+  "OrdersTable": [
+    {
+      "orderId": "ORD001",
+      "userId": "U001",
+      "totalAmount": 998,
+      "items": [
+        {
+          "productId": "P001",
+          "quantity": 2,
+          "price": 499
+        }
+      ]
+    }
+  ]
+}
