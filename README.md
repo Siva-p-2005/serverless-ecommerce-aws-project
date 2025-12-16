@@ -1,6 +1,6 @@
 # Serverless E-commerce Store Project (AWS)
 
-## 👨‍🎓 Student Name
+## 👨‍🎓  Name
 Siva
 
 ## ☁️ Project Type
